@@ -1,6 +1,6 @@
 # Currency Exchange Rate API - Receive Real Time Rates
 
-This API allows users to retreive real-time exchange rates for different currencies. 
+This API allows users to retrieve real-time exchange rates for different currencies. 
 
 ## Endpoint: Request API
 
@@ -65,9 +65,9 @@ GET https://api.exchangerate-api.com/v4/latest/USD
 
 |Code |Cause |Fix |
 |-----|------|----|
-|'400 Bad Request' |The request was malformed or missing required parameters. |Check the request URL for correctness and ensure the `base_currency` is valid |
+|'400 Bad Request' |The request was malformed or missing required parameters. |Check the request URL for correctness and ensure the `base_currency` is valid. |
 |'404 Not Found' |The API endpoint or resource was not found. |Ensure the URL endpoint is correct. |
-|'429 Too Many Requests' |You have exceeded the rate limit for API requests. |Wait for the reate limit to reset. |
+|'429 Too Many Requests' |You have exceeded the rate limit for API requests. |Wait for the rate limit to reset. |
 |'500 Internal Server Error' |The server encountered an unexpected error. |Try again later. If the issue persists, contact support. |
 
 
