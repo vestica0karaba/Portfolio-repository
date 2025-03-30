@@ -26,16 +26,16 @@ https://api.exchangerate-api.com/v4/latest/USD
 
 ### Headers
 
-|Header |Description |Required |
-|-------|------------|---------|
-|Content-Type |The format of the request payload |No |
-|Accept |Type format of the response |No |
+|Header       |Description                       |Required |
+|-------------|----------------------------------|---------|
+|Content-Type |The format of the request payload |No       |
+|Accept       |Type format of the response       |No       |
 
 
 ### Parameters
 
-|Parameter     |Type    |Required  |Description |
-|--------------|--------|----------|------------|
+|Parameter     |Type    |Required  |Description                  |
+|--------------|--------|----------|-----------------------------|
 |"base_curency"|string  |Yes       | The base curency you request|
 
 
@@ -81,32 +81,32 @@ The response from the API will be in **JSON** format and contains the following 
 
 ### "rates" Objects
 
-|Currency Code |Type |Description |
-|--------------|-----|------------|
-|"EUR" |number |The exchange rate for EUR against the base currency. |
-|"GBP" |number |The exchange rate for BGP against the base currency. |
-|"JPY" |number |The exchange rate for JPY against the base currency. |
-|"CAD" |number |The exchange rate for CAD against the base currency. |
+|Currency Code |Type   |Description                                          |
+|--------------|-------|-----------------------------------------------------|
+|"EUR"         |number |The exchange rate for EUR against the base currency. |
+|"GBP"         |number |The exchange rate for BGP against the base currency. |
+|"JPY"         |number |The exchange rate for JPY against the base currency. |
+|"CAD"         |number |The exchange rate for CAD against the base currency. |
 
 ### Status and Errors
 
-|Code |Description|
-|-----|-----------|
-|"200 OK" |Successfully retreived data|
-|"400 Bad Request" |Invalid or missing currency code |
-|"404 Not Found" |API endpoint not found |
-|"429 Too Many Requests" |Rate limit exceeded |
+|Code                        |Description                                          |
+|----------------------------|-----------------------------------------------------|
+|"200 OK"                    |Successfully retreived data                          |
+|"400 Bad Request"           |Invalid or missing currency code                     |
+|"404 Not Found"             |API endpoint not found                               |
+|"429 Too Many Requests"     |Rate limit exceeded                                  |
 |"500 Internal Server Error" |An error occurred processing the request on a server |
 
 
 ### Error Messages 
 
-|Code |Cause |Fix |
-|-----|------|----|
-|"400 Bad Request" |The request was malformed or missing required parameters. |Check the request URL for correctness and ensure the `base_currency` is valid. |
-|"404 Not Found" |The API endpoint or resource was not found. |Ensure the URL endpoint is correct. |
-|"429 Too Many Requests" |You have exceeded the rate limit for API requests. |Wait for the rate limit to reset. |
-|"500 Internal Server Error" |The server encountered an unexpected error. |Try again later. If the issue persists, contact support. |
+|Code                        |Cause                                                     |Fix                                                                            |
+|----------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------|
+|"400 Bad Request"           |The request was malformed or missing required parameters. |Check the request URL for correctness and ensure the `base_currency` is valid. |
+|"404 Not Found"             |The API endpoint or resource was not found.               |Ensure the URL endpoint is correct.                                            |
+|"429 Too Many Requests"     |You have exceeded the rate limit for API requests.        |Wait for the rate limit to reset.                                              |
+|"500 Internal Server Error" |The server encountered an unexpected error.               |Try again later. If the issue persists, contact support.                       |
 
 
 ## Code Sample
